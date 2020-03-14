@@ -86,10 +86,10 @@ export default class SideMenu extends Component {
                 mode = {'dropdown'}
                 onValueChange={(itemValue) =>
                   this.setState({ type: itemValue })}>
-                <Picker.Item label="category1" value="category1" />
-                <Picker.Item label="category2" value="category2" />
-                <Picker.Item label="category3" value="category3" />
-                <Picker.Item label="category4" value="category4" />
+                <Picker.Item label="Top Category" value="Top Category" />
+                <Picker.Item label="Bike" value="Bike" />
+                <Picker.Item label="Car" value="Car" />
+                <Picker.Item label="Bus" value="Bus" />
               </Picker>
               </View>
             </TouchableOpacity>

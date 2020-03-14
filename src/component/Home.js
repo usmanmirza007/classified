@@ -151,6 +151,7 @@ export default class Home extends React.Component {
               />
             </View>
             <View style={styles.categoryContainer}>
+            <ScrollView horizontal >
               <View style={{ flexDirection: 'row', }}>
                 <TouchableOpacity onPress={() => { this.props.navigation.navigate('ads', { categoryImage: './../image/1phoneIcon.png', categoryName: 'Phone' }) }}>
 
@@ -171,8 +172,6 @@ export default class Home extends React.Component {
                     <Text style={styles.categoryText}>Electronics</Text>
                   </View>
                 </TouchableOpacity>
-              </View>
-              <View style={{ flexDirection: 'row', }}>
                 <TouchableOpacity onPress={() => { this.props.navigation.navigate('ads', { categoryImage: './../image/1phoneIcon.png', categoryName: 'Phone' }) }}>
 
                   <View style={styles.innerCategory}>
@@ -192,8 +191,6 @@ export default class Home extends React.Component {
                     <Text style={styles.categoryText}>Household</Text>
                   </View>
                 </TouchableOpacity>
-              </View>
-              <View style={{ flexDirection: 'row', }}>
                 <TouchableOpacity onPress={() => { this.props.navigation.navigate('ads', { categoryImage: './../image/1phoneIcon.png', categoryName: 'Phone' }) }}>
 
                   <View style={styles.innerCategory}>
@@ -214,6 +211,7 @@ export default class Home extends React.Component {
                   </View>
                 </TouchableOpacity>
               </View>
+              </ScrollView>
             </View>
 
             <View style={styles.featuredAds}>
@@ -604,10 +602,8 @@ const styles = StyleSheet.create({
   },
   innerCategory: {
     flexDirection: 'column',
-    borderBottomColor: '#ccc',
-    borderBottomWidth: 1,
-    borderEndWidth: 1,
-    borderEndColor: '#ccc',
+    borderWidth: 1,
+    borderColor: '#ccc',
     backgroundColor: '#fff',
     width: 100,
     height: 100,
