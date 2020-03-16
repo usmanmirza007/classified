@@ -3,7 +3,6 @@ import SignUp from '../component/SignUp';
 import Forget from '../component/Forget';
 import splash from '../component/splash';
 import message from '../component/message';
-import Slider from '../component/Slider';
 import DashBoard from './DashBoard';
 import createAds from './../component/createAds';
 import manageProfile from './../component/manageProfile';
@@ -16,12 +15,6 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 const Route =  createStackNavigator({
     
-    Slider: {
-        screen: Slider,
-        navigationOptions: {
-            header: null,
-        },
-    },
     splash: {
         screen: splash,
         navigationOptions: {
